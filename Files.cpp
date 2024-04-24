@@ -8,6 +8,6 @@ ifstream infile;
 infile.open("file.txt");
 infile >> line;
 
-cout << data<< endl;
+cout << line<< endl;
     return 0;
 }
