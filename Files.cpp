@@ -11,8 +11,7 @@ string capitalize(string &fileData);
 int main(){
 
 string fileData;
-ifstream line;
-line.open("./file.txt");
+ifstream line("file.txt");
 
 if(line.is_open()){
     while(getline(line,fileData))
