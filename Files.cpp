@@ -1,31 +1,33 @@
+#include<algorithm>
 #include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
 
 int countVowels(string &fileData);
-int countWords(string &fileData);
-string reverse(const string& text);
+string reverseString(const string& text);
 string capitalize(string &fileData);
 
 int main(){
 
 string fileData;
 ifstream line;
-line.open("files/file.txt");
+line.open("./file.txt");
 
 if(line.is_open()){
     while(getline(line,fileData))
     line>>fileData;
+
   cout<<fileData<<endl;   
 
     //outputs the number of vowels 
-    cout << countVowels(fileData)<< endl;
+    cout <<"Number of vowels:"<< countVowels(fileData)<< endl;
 
-    //outputs the number of words
-    cout<<fileData<<endl;
+    //outputs the sentence in reverse
+    cout <<"The sentence in reverse :"<<reverseString(fileData)<<endl;
 
-    //outputs the 
+    //capitalizing the sentence's every second char in a word 
+    cout<<"Capitalizing every second letter in the sentence :"<<capitalize(fileData)<<endl;
 }
     else{
     cout<<"unable to open file!"<<endl;
@@ -45,15 +47,10 @@ int countVowels(string &fileData){
         return vowels;
 }
 
-int countWords(string &fileData){
-
-    return 0;
-}
-
-string reverse(const string& text) {
-    string rev = text;
-    reverse(rev.begin(), rev.end());
-    return rev;
+string reverseString(const string& text) {
+    string reversed = text;
+    reverse(reversed.begin(), reversed.end());
+    return reversed;
 }
 
 string capitalize(string &fileData){
@@ -66,7 +63,7 @@ string capitalize(string &fileData){
             result+= ch;
         }
         else{
-            result+= cap ? toupper(ch) :ch;
+            result += cap ? toupper(ch) :ch;
             cap =!cap;
             }
         }
