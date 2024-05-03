@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int swapNumbers(int a, int b);
+int swapNumbers(int *a, int *b);
 
-int main(int argc, char *argv[])
+int main( )
 {
 int varA = 25;
 int varB = 100;
@@ -11,18 +11,17 @@ int varB = 100;
 cout<< "varA before swap: "<< varA<< endl;
 cout<< "varB before swap: "<< varB<< endl;
 		
-	swapNumbers(varA, varB);
+	swapNumbers(&varA, &varB);
 cout<<"varA after swap : "<<varA<<endl;
 cout<<"varB after swap: "<<varB<<endl;
 
 return 0;
 }
 
-int swapNumbers(int a, int b){
-    int temp = a;
-    a = b;
-    b = temp;
+int swapNumbers(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
     
-    return a, b;
+    return *a, *b;
 }
-    
