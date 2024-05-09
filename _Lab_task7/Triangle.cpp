@@ -1,14 +1,20 @@
 #include "Triangle.h"
 
 shapes::Triangle::Triangle() {
-        radius = 0;
+        base = 0;
+        height = 0;
     }
 
-    shapes::Triangle::Triangle(double length){
-        radius=length;
+    shapes::Triangle::Triangle(double a, double b){
+        base = base;
     }
 
-    double shapes::Triangle::getRadius()const {
-        return radius;
+    double shapes::Triangle::getBase()const {
+        return base;
     }
+        double shapes::Triangle::getHeight()const {
+        return height;
+    }
+
+    shapes::Triangle::~Triangle(){ }
 

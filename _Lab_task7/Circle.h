@@ -1,4 +1,4 @@
-  
+  #pragma once
   namespace shapes{
   class Circle {
     private:
@@ -6,7 +6,7 @@
 
     public:
         Circle();
-        Circle(double r);
+        Circle(double newRadius);
         double getRadius() const;
         ~Circle();
     };

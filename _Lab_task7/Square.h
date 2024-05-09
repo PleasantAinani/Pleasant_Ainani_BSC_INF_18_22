@@ -7,6 +7,7 @@ class Square{
     public:
         Square();
         Square(double length);
-        double getSideLength() ;
+        double getSideLength() const ;
+        ~Square();
 };
 };

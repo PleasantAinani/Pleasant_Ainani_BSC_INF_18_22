@@ -1,13 +1,13 @@
-//#prigma once
-
+#pragma once
 namespace shapes{
 class Triangle{
     private:
         double base, height;
     public:
         Triangle();
-        Triangle(double length);
+        Triangle(double a, double b);
         double getBase() const;
         double getHeight() const;
+        ~Triangle();
 };
 };

@@ -1,8 +1,7 @@
 #include "Square.h"
 #include "Triangle.h"
 #include "Circle.h"
-    
-    
+using namespace shapes;
     class Area {
     public:
         static Square calculateArea(const Square& square) {
@@ -15,6 +14,6 @@
         }
 
         static double calculateArea(const Circle& circle) {
-            return M_PI * circle.getRadius() * circle.getRadius();
+            return 0.5 * circle.getRadius() * circle.getRadius();
         }
     };

@@ -1,10 +1,16 @@
 #include "Square.h"
 
-namespace shapes{
-    Square::Square(): sideLength(0) {
-    Square::Square(double length):sideLength(length){}
-    double Square::getSideLength() {
+shapes::Square::Square() {
+        sideLength = 0;
+    }
+
+    shapes::Square::Square(double length){
+        sideLength = length;
+    }
+
+    double shapes::Square::getSideLength()const {
         return sideLength;
     }
-    }
-}
+
+    shapes::Square::~Square(){ }
+

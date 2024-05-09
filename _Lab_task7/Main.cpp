@@ -1,13 +1,12 @@
 #include "Square.h"
 #include "Triangle.h"
 #include "Circle.h"
+#include "Area.h"
 #include<iostream>
 using namespace std;
 using namespace shapes;
 
 int main() {
-    using namespace std;
-    using namespace shapes;
 
     char choice;
     do {
@@ -49,8 +48,7 @@ int main() {
                 break;
             default:
                 cout << "Invalid choice. Please enter a valid option.\n";
-                cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
         }
     } while(choice != '4');
 
