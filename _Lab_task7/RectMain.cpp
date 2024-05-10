@@ -30,6 +30,5 @@ int main(){
     Rectangle rectangle2(length,width);
     cout<<"the area is: "<<rectangle2.calculateArea()<<endl;
 
-
     return 0;
 }
