@@ -2,9 +2,9 @@
 #include "Box.h"
 
 Box::Box(){
-    length=0;
-    breadth=0;
-    height=0;
+    length=0.0;
+    breadth=0.0;
+    height=0.0;
 }
 Box::Box(const double newLength, const double newBreadth, const double newHeight){
     length = newLength;
