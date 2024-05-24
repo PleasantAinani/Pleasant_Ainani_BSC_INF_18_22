@@ -4,4 +4,4 @@
 class Rectangle : public Polygon{
     public:
         int area();
-};
+}; 

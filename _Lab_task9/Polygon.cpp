@@ -1,5 +1,5 @@
 #pragma once
-#include "./Polygon.h"
+#include "Polygon.h"
 
 void Polygon::setValues(int  width, int height)
 {

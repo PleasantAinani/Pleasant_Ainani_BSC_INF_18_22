@@ -2,4 +2,4 @@
 
 int Rectangle::area(){
     return mWidth * mHeight;
-}
+} 

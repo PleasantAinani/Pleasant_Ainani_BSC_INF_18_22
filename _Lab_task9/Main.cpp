@@ -10,8 +10,8 @@ int main(){
     rect.setValues(4,5);
     trgl.setValues(4,5);
 
-    cout<<rect.area()<<'/n';
-    cout<<trgl.area()<<'/n';
+    cout<<rect.area()<<'\n';
+    cout<<trgl.area()<<'\n';
 
     return 0;
 }
