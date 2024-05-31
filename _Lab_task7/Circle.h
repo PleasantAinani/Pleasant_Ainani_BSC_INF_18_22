@@ -5,9 +5,9 @@
         double radius;
 
     public:
-        Circle();
+        Circle(); 
         Circle(double newRadius);
         double getRadius() const;
         ~Circle();
     };
-  };
+  }; 

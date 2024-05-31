@@ -20,8 +20,8 @@ int main()
 int JohnAge =John;
 cout<< "John's age :"<<JohnAge<<endl;
 
-string janeFirstName = Jane;
-cout << "Jane's firstName" << janeFirstName<<endl;
+//string janeFirstName = Jane;
+//cout << "Jane's firstName" << janeFirstName<<endl;
 
 float janeWeight = Jane;
 cout << "Jane's Weight" << janeWeight << endl;

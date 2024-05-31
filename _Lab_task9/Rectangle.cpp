@@ -1,5 +1,6 @@
 #include "Rectangle.h"
 
-int Rectangle::area(){
+int Rectangle::Area()
+{
     return mWidth * mHeight;
-} 
+}

@@ -38,7 +38,7 @@ Person::Person()
 Person::operator int(){
 return mAge;
 }
-string Person::operator = (const Person)
+string Person::operator = (const Person &)
 {
     return this->mFirstName;
 }
